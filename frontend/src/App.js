@@ -1,11 +1,21 @@
 import './App.css';
-import Validation from './Components/Validation';
+import Layout from './Components/Layout';
+// import Category from './Components/Categories/Category';
+// import Footer from './Components/Footer';
+// import Validation from './Components/Validation';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Validation />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        {/* <Validation />
+      <Category />
+      <Footer /> */}
+        <Layout />
+      </div>
+    </BrowserRouter>
+
   );
 }
 
