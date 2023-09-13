@@ -1,9 +1,10 @@
 import React from 'react'
+import Connect from '../Connect'
 
 function Blog() {
     return (
         <div className="container min-w-full">
-            <div className="grid grid-cols-2 bg-[#545B77] py-5 px-3">
+            <div className="grid grid-cols-1 bg-[#545B77] py-5 px-3 md:grid-cols-2">
                 <div>
                     <p className='text-3xl text-white font max-w-[400px]'>5 Factors to Consider while Choosing Clothing Manufacturers</p>
                 </div>
@@ -19,8 +20,8 @@ function Blog() {
                     <p className='text-xs'> Aug 21, 2023 — 2 min read</p>
                 </div>
             </div>
-            <div className="grid bg-[#545B77] py-10  place-items-center">
-                <div className='max-w-[800px] py-5 px-20 bg-white opacity-30'>
+            <div className="grid bg-[#545B77]  place-items-center md:px-10 py-2 ">
+                <div className='max-w-[800px] py-5 px-3 text-sm bg-white opacity-30 xl:text-xl xl:py-10 xl:px-10'>
 
                     <p>Are you looking for the perfect wholesale clothing manufacturer to partner with for your store? With so many options on the market, it can be overwhelming to choose one that fits all of your needs. But fear not! In this blog post, we've gathered the top 5 factors you should consider when selecting a wholesale clothing manufacturer. From quality and pricing to customer service and production time - we've got you covered! So get ready to make an informed decision and take your business to new heights with the right manufacturing partner by your side.</p>
 
@@ -40,20 +41,24 @@ function Blog() {
                     </p>
                 </div>
             </div>
-            <div className='grid grid-cols-3'>
-                <div className='text-[#545B77]'>
+            <div className='grid grid-cols-1 gap-y-3 place-items-center my-10 md:grid-cols-2'>
+                <div className='text-[#545B77] flex justify-start items-center'>
                     <div>
-                        <p className='text-sm'>Name</p>
-                        <p className='text-sm'>Complex Landscape of Sustainable Fashion </p>
-                        <p className='text-xs'>while Choosing Clothing Manufacturers</p>
+                        <p className='text-sm lg:text-lg'>Name</p>
+                        <p className='text-sm lg:text-lg'>Complex Landscape of Sustainable Fashion </p>
+                        <p className='text-xs lg:text-base'>while Choosing Clothing Manufacturers</p>
                     </div>
                     <div className='p-1 w-16'>
                         <img src="/Images/Blog.png" alt="" />
                     </div>
                 </div>
-                <div>
-
+                <div className='text-[#545B77]'>
+                    <p className='underline'>Older Post</p>
+                    <p className='text-sm md:text-base lg:text-xl'>Navigating the Complex Landscape of Sustainable Fashion with Your Clothing Supplier</p>
                 </div>
+            </div>
+            <div>
+                <Connect />
             </div>
         </div>
     )
