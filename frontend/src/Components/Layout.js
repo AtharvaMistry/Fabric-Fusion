@@ -27,7 +27,7 @@ function Layout() {
 
     return (
         <div className="container min-w-full">
-            <div className="grid grid-cols-2 px-2 py-2 border-b-[0.5px] md:grid-cols-5">
+            <div className="grid grid-cols-2 px-2 py-2 border-b-[0.5px] md:grid-cols-5 md:px-10 xl:px-20">
                 <div className='md:col-span-1'>
                     <p>FashinBuzz</p>
                 </div>
@@ -76,7 +76,7 @@ function Layout() {
                                     <p className='font-medium  '>Categories</p>
                                 </div>
                             </Link>
-                            <Link to="/mail">
+                            <Link to="">
                                 <div className='flex shrink-0 justify-start  text-sm items-center mb-3 text-gray-600 hover:text-black hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                     <p className='font-medium  '>mail</p>
                                 </div>
@@ -118,7 +118,7 @@ function Layout() {
                                 <p className='font-medium  '>Categories</p>
                             </div>
                         </Link>
-                        <Link to="/mail">
+                        <Link to="">
                             <div className='flex shrink-0 justify-start  text-sm items-center text-gray-600 hover:text-black hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                 <p className='font-medium  '>mail</p>
                             </div>

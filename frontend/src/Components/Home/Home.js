@@ -8,37 +8,44 @@ function Home() {
 
             <div className="grid text-center place-items-center">
                 <p className='text-xl mb-3 text-[#545B77] md:text-3xl font-medium'>One Stop Solution For <br />Fashion Manufacturing</p>
-                <button className='bg-[#545B77] px-3 py-1 rounded-md max-w-[300px] text-white md:text-2xl'>Connect with us</button>
+                <button className='bg-[#545B77] px-3 py-1 rounded-md max-w-[300px] shrink-0 text-white md:text-2xl'>Connect with us</button>
             </div>
 
             <div className="grid grid-cols-1 my-5 sm:grid-cols-2">
-                <div className="border">
+                {/* <div className="border">
                     <img
                         src="/Images/home1 (1).png"
                         alt=""
                         className=""
                     />
+                </div> */}
+                <div class="relative">
+                    <img src="/Images/home1 (1).png" alt="-" class="w-full h-full object-cover" />
                 </div>
-                <div className="border">
+                <div class="relative">
+                    <img src="/Images/home1 (2).png" alt="-" class="w-full h-full object-cover" />
+                </div>
+
+                {/* <div className="border">
                     <img
                         src="/Images/home1 (2).png"
                         alt=""
                         className=""
                     />
-                </div>
+                </div> */}
             </div>
 
 
             <div className="grid grid-cols-3 my-10">
-                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e hover:translate-y-1 md:py-5'>
+                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e hover:translate-y-[2px] md:py-5'>
                     <p className='text-2xl font-medium md:text-4xl'>10k</p>
                     <p className='text-xs md:text-xl'>Designs</p>
                 </div>
-                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e translate-y-[-10px] hover:translate-y-1 md:py-5'>
+                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e translate-y-[-10px] hover:translate-y-[2px] md:py-5'>
                     <p className='text-2xl font-medium md:text-4xl'>50</p>
                     <p className='text-xs md:text-xl'>MOQ</p>
                 </div>
-                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e hover:translate-y-1 md:py-5 '>
+                <div className='text-[#545B77] bg-[#f3f6ff]  text-center py-2 border-e hover:translate-y-[2px] md:py-5 '>
                     <p className='text-2xl font-medium md:text-4xl'>21</p>
                     <p className='text-xs md:text-xl'>Days Delivery</p>
                 </div>
@@ -175,90 +182,90 @@ function Home() {
 
             <div className="grid text-center my-5">
                 <p className='text-xl text-[#545B77] font-medium mb-3'>Product Category</p>
-                <div>
+                <div className='flex overflow-x-scroll scrollbar1 py-10 gap-10'>
                     {/* todo: carousel */}
-                    {/* <Carousel effect="fade" className='w-screen'>
 
-                        <div className='relative  mb-10'>
-                            <img src="/Images/group (4).png" alt="" />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Ethnic Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative    mb-10'>
-                            <img src="/Images/western-wear.jpg" alt="" />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Wester Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative    mb-10'>
-                            <img src="/Images/casual.jpg" alt="" />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Casual Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative    mb-10'>
-                            <img src="/Images/group (3).png" alt="" />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Winter Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative    mb-10'>
-                            <img src="/Images/lounge-wear.jpg" alt="" />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Lounge Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative    mb-10'>
-                            <img src="/Images/group (2).png" alt="" className='' />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Active Wear</p>
-                            </div>
-                        </div>
-                        <div className='relative  border  mb-10'>
-                            <img src="/Images/group (1).png" alt="" className='   ' />
-                            <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
-                                <p>Kids Wear</p>
-                            </div>
-                        </div>
 
-                    </Carousel> */}
+                    <div className='relative max-w-[300px] shrink-0'>
+                        <img src="/Images/group (4).png" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Ethnic Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/western-wear.jpg" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Wester Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/casual.jpg" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Casual Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/group (3).png" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Winter Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/lounge-wear.jpg" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Lounge Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/group (2).png" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Active Wear</p>
+                        </div>
+                    </div>
+                    <div className='relative max-w-[300px] shrink-0 border'>
+                        <img src="/Images/group (1).png" alt="" className='max-h-[400px]' />
+                        <div className='absolute bottom-[-15px] left-[20%] bg-[#F3F6FF] px-10 py-2 shadow-md '>
+                            <p>Kids Wear</p>
+                        </div>
+                    </div>
+
+
                 </div>
 
             </div>
 
 
 
-            <div className="grid text-center my-5">
+            <div className="grid text-center my-5 place-items-center">
                 <p className='text-xl text-[#545B77] font-medium mb-3'>Frequently Asked Questions</p>
                 <div>
                     {/* todo: carousel */}
-                    {/* <Carousel effect="fade" className='w-screen'>
+                    <Carousel effect="fade" className='max-w-[1100px]'>
 
-                        <div className=' border-2 rounded-md py-5 text-[#545B77]'>
+                        <div className=' border-2 rounded-md py-5 bg-[#F3F6FF] text-[#545B77] '>
                             <p className='text-black text-xl'>1.How long does it take to get my order?</p>
                             <p className='text-[#545b77]'>We promise to provide end-to-end design-to-delivery solutions within three weeks</p>
                         </div>
 
 
-                        <div className=' border-2 rounded-md py-5 '>
+                        <div className=' border-2 rounded-md py-5 bg-[#F3F6FF] '>
                             <p className='text-black text-xl'>2.How long does it take to get my order?</p>
                             <p className='text-[#545b77]'>We promise to provide end-to-end design-to-delivery solutions within three weeks</p>
                         </div>
 
 
-                        <div className=' border-2 rounded-md py-5 '>
+                        <div className=' border-2 rounded-md py-5 bg-[#F3F6FF] '>
                             <p className='text-black text-xl'>3.How long does it take to get my order?</p>
                             <p className='text-[#545b77]'>We promise to provide end-to-end design-to-delivery solutions within three weeks</p>
                         </div>
 
 
-                        <div className=' border-2 rounded-md py-5 '>
+                        <div className=' border-2 rounded-md py-5 bg-[#F3F6FF] '>
                             <p className='text-black text-xl'>4.How long does it take to get my order?</p>
                             <p className='text-[#545b77]'>We promise to provide end-to-end design-to-delivery solutions within three weeks</p>
                         </div>
 
-                    </Carousel> */}
+                    </Carousel>
                 </div>
 
             </div>

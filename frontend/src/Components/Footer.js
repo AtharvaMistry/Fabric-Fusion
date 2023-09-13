@@ -28,9 +28,9 @@ function Footer() {
             </div>
 
             <div className='grid grid-cols-3 place-items-center pb-3 gap-y-1  border-black'>
-                <img src="/Images/Group 23132.png" alt="" className='w-6' />
-                <img src="/Images/Group 23133.png" alt="" className='w-6' />
-                <img src="/Images/Group 23131.png" alt="" className='w-6' />
+                <img src="/Images/Group 23132.png" alt="" className='w-6 xl:w-12' />
+                <img src="/Images/Group 23133.png" alt="" className='w-6 xl:w-12' />
+                <img src="/Images/Group 23131.png" alt="" className='w-6 xl:w-12' />
             </div>
         </div>
 

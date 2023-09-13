@@ -16,3 +16,6 @@
 :where(.css-dev-only-do-not-override-18iikkb).ant-carousel .slick-dots li button{
     background-color: black !important;
 }
+.scrollbar1::-webkit-scrollbar{
+    width: 0px;
+}
