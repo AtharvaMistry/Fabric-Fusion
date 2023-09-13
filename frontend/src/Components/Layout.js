@@ -118,7 +118,7 @@ function Layout() {
                                 <p className='font-medium  '>Categories</p>
                             </div>
                         </Link>
-                        <Link to="">
+                        <Link to="/mail">
                             <div className='flex shrink-0 justify-start  text-sm items-center text-gray-600 hover:text-black hover:duration-500 lg:text-xl xl:text-xl 2xl:text-2xl'>
                                 <p className='font-medium  '>mail</p>
                             </div>
